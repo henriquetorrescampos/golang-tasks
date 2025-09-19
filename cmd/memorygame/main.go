@@ -1,7 +1,7 @@
 // Programa executável do jogo da memória (CLI).
 // Uso:
 //
-//	go run ./cmd/memorygame
+// go run ./cmd/memorygame
 //
 // Depois siga instruções na tela.
 package main
@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/seu-usuario/meu-projeto-go/internal/memorygame"
+	memoriago "projeto-go/internal/memoria-go"
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 	fmt.Println("")
 
 	rows, cols := 4, 4 // Tabuleiro 4x4 -> 8 pares
-	game, err := memorygame.NewGame(rows, cols)
+	game, err := memoriago.NewGame(rows, cols)
 	if err != nil {
 		fmt.Println("Erro criando jogo:", err)
 		return

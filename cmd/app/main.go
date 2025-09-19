@@ -5,14 +5,15 @@ package main
 // Importa os pacotes necessários
 import (
 	"fmt"
-
-	memoriago "projeto-go/internal/memoria-go"
+	"projeto-go/internal/anamnese"
+	// memoriago "projeto-go/internal/memoria-go"
 )
 
 // Função principal do programa
 func main() {
+	fmt.Println("Hello, world.")
 	// Mensagem inicial da aplicação
-	fmt.Println("🚀 Meu primeiro projeto em Go com estrutura de mercado!")
+	// fmt.Println("🚀 Meu primeiro projeto em Go com estrutura de mercado!")
 
 	// Chamada para função de saudação
 	// hello.SayHello()
@@ -40,11 +41,13 @@ func main() {
 
 	// fmt.Println("Seu palpite foi:", meuPalpite)
 
-	seq1 := []int{1, 2, 3, 10}
+	// seq1 := []int{1, 2, 3, 10}
 
-	seq2 := []int{1, 9, 4}
+	// seq2 := []int{1, 9, 4}
 
-	result := memoriago.Pontuar(seq1, seq2)
+	// result := memoriago.Pontuar(seq1, seq2)
 
-	fmt.Println(result)
+	// fmt.Println(result)
+
+	anamnese.Anamense()
 }
