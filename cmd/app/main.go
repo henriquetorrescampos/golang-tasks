@@ -5,13 +5,14 @@ package main
 // Importa os pacotes necessários
 import (
 	"fmt"
-	"projeto-go/internal/anamnese"
+	anonymousfunction "projeto-go/internal/anonymous-function"
+	// "projeto-go/internal/anamnese"
 	// memoriago "projeto-go/internal/memoria-go"
 )
 
 // Função principal do programa
 func main() {
-	fmt.Println("Hello, world.")
+	fmt.Println("Hello, this is my golang project.")
 	// Mensagem inicial da aplicação
 	// fmt.Println("🚀 Meu primeiro projeto em Go com estrutura de mercado!")
 
@@ -49,5 +50,18 @@ func main() {
 
 	// fmt.Println(result)
 
-	anamnese.Anamense()
+	// anamnese.Anamense()
+
+	/*
+		função anônima é uma função que não possui nome
+		é útil quando você quer criar um função de 1 linha.
+		É conhecida por função literal.
+	*/
+	// func(a, b int, z float64) bool {
+	// 	return (a*b < int(z))
+	// }(10, 20, 20.2)
+	fmt.Println(
+		anonymousfunction.La(
+			10, 20, 30.4))
+
 }
