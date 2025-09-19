@@ -1,0 +1,5 @@
+package anonymousfunction
+
+var La = func(a, b int, z float64) bool {
+	return (a*b < int(z))
+}
